@@ -12,6 +12,6 @@ O projeto oferece a possibilidade de criar diversas funções com base no códig
 
 Para tirar o máximo proveito deste projeto, é aconselhável ter algum conhecimento prévio em IoT e eletrônica. Isso facilitará a configuração e personalização do projeto de acordo com suas necessidades específicas. Divirtam-se explorando e experimentando o código !
 
-Não esqueça de instalar a placa ESP32 na IDE ( ESP32 by Espressif Systems ) e escolher a opção ESP32 Dev Module.
+Não esqueça de instalar a placa ESP32 na IDE ( ESP32 by Espressif Systems ) e escolher a opção ESP32 Dev Module. Creio eu que o código esteja bem comentado e de fácil compreensão.
 
-# FEITO POR GABRIEL TEIXEIRA
+# CÓDIGO DESENVOLVIDO POR GABRIEL TEIXEIRA
