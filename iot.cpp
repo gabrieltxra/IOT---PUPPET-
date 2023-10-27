@@ -3,8 +3,8 @@
 
 const char *ssid = "ssid"; // aqui você vai colocar o nome da rede que deseja conectar
 const char *password = "password"; // e aqui irá colocar a senha da rede
-const int led = 12; 
-const int led2 = 13;
+const int led = 12; // alterar os pinos conforme necessidade
+const int led2 = 13; // alterar os pinos conforme necessidade
 
 WebServer server(80);
 
