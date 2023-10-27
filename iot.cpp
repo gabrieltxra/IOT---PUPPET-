@@ -36,7 +36,7 @@ void setup() {
 
     html += "<style>html { font-family: Helvetica; display; inline-block; margin: 0px auto; text-align: center;}";
     html += "text-decoration: none; font-size: 30px; margin: 2px; cursor: pointer;}";
-    html += ".body { color: #ffffff; background-color: #191919; }";
+    html += ".body { color: #ffffff; background-color: rgb(27, 26, 26); }";
     html += ".button {background-color: #a52a2a; border: none; padding: 16px 40px; text-decoration: none; font-size: 30px; margin: 2px; cursor: pointer;}";
     html += ".button2 { background-color: #ffd68f;}</style> </head>";
 
@@ -45,8 +45,7 @@ void setup() {
     html += "<p><a href=\"/ligar/on\"><button class=\"button\">ON</button></a></p>";
     html += "<p><a href=\"/desligar/off\"><button class=\"button button2\">OFF</button></a></p>";
     html += "<p><a href=\"/piscar\"><button class=\"button button2\">PISCAR</button></a></p>";
-
-    html += "<MARQUEE><h1>CURSO IOT - INTERNET DAS COISAS</h1></MARQUEE>";
+	  
     html += "<img src=\"https://i.pinimg.com/564x/d1/fe/7e/d1fe7e0090f89e5a0d8e740700be73fb.jpg\" width=\"564\" height=\"564\" align=\"center\"/>";
     html += "</body></html>";
     server.send(200, "text/html", html);
