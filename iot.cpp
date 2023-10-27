@@ -20,16 +20,19 @@ void setup() {
   WiFi.begin(ssid, password);
 
 // ATENÇÃO !! pegar o endereço de ip do terminal da IDE e entrar pelo navegador para poder controlar o robô
-  while (WiFi.status() != WL_CONNECTED) {
-    delay(1000);
-    Serial.println("Conectando ao WiFi...");
-  }
-  Serial.println("Conectado com sucesso ao WiFi");
+  while (WiFi.status() != WL_CONNECTED) 
+  {
+   	delay(1000);
+  	Serial.println("Conectando ao WiFi...");
+	  
+  }	
+Serial.println("Conectado com sucesso ao WiFi");
 
-  Serial.print("Endereço IP:");
-  Serial.println(WiFi.localIP());
-
-  server.on("/", HTTP_GET, []() {
+ 	 Serial.print("Endereço IP:");
+ 	 Serial.println(WiFi.localIP());	
+	
+    // site
+    server.on("/", HTTP_GET, []() {
     String html = "<html><body>";
     html += "<!DOCTYPE html><html><head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">";
     html += "<link rel=\"icon\" href=\"data:,\">";
@@ -49,41 +52,49 @@ void setup() {
     html += "<img src=\"https://i.pinimg.com/564x/d1/fe/7e/d1fe7e0090f89e5a0d8e740700be73fb.jpg\" width=\"564\" height=\"564\" align=\"center\"/>";
     html += "</body></html>";
     server.send(200, "text/html", html);
+	    
   });
 
   // liga os olhos
-  server.on("/ligar/on", HTTP_GET, []() {
-    digitalWrite(led, HIGH);
-    digitalWrite(led2, HIGH);
-    server.send(200, "text/html", "LED LIGADO");
+    server.on("/ligar/on", HTTP_GET, []() 
+    {
+    	 digitalWrite(led, HIGH);
+   	 digitalWrite(led2, HIGH);
+   	 server.send(200, "text/html", "LED LIGADO");
+	    
   });
 
   // desliga os olhos
-  server.on("/desligar/off", HTTP_GET, []() {
-    digitalWrite(led, LOW);
-    digitalWrite(led2, LOW);
-    server.send(200, "text/html", "LED DESLIGADO");
+    server.on("/desligar/off", HTTP_GET, []() 
+    {
+   	 digitalWrite(led, LOW);
+   	 digitalWrite(led2, LOW);
+   	 server.send(200, "text/html", "LED DESLIGADO");
   });
-
-	server.on("/piscar", HTTP_GET, []() {
-
-// o olho vai piscar 20 vezes e após isso irá desligar sozinho ( não precisa desligar pelo botão do site)
-	for(int i = 0; i <20; i++){ 
-	digitalWrite(led,HIGH);
-	digitalWrite(led2,HIGH);
-	delay (800);
-	digitalWrite(led,LOW);
-	digitalWrite(led2,LOW);
-	delay (800);
-	}
+	
+	// o olho vai piscar 20 vezes e após isso irá desligar sozinho ( não precisa desligar pelo botão do site)
+	server.on("/piscar", HTTP_GET, []() 
+	{
+	for(int i = 0; i <20; i++)
+	   { 
+		digitalWrite(led,HIGH);
+		digitalWrite(led2,HIGH);
+		delay (800);
+		digitalWrite(led,LOW);
+		digitalWrite(led2,LOW);
+		delay (800);
+	   }
 
     server.send(200, "text/html", "PISCANDO");
-  });
+		
+ 	});
 
 
   server.begin();
 }
 
 void loop() {
+	
   server.handleClient(); // vai chamar todas as funções do server.on pro loop
+	
 }
