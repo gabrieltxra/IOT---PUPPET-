@@ -1,4 +1,4 @@
-# IOT---PUPPET-
+# IOT PUPPET
 
 Este projeto foi desenvolvido em C++ na IDE do Arduino. Sua principal função é controlar o funcionamento dos olhos de um animatrônico, mas ele pode ser personalizado para realizar diversas outras tarefas. Ele se conecta a uma placa chamada ESP32, que é conhecida por sua capacidade de se conectar a internet, graças a biblioteca WiFi.h que ajuda ( Já vem incluso o WebSever nela), que já está disponível na IDE do Arduino.
 
