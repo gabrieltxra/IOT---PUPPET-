@@ -10,7 +10,7 @@ O código pode ser aprimorado e personalizado de diversas maneiras. O site é si
 
 O projeto oferece a possibilidade de criar diversas funções com base no código fornecido. já que a função digitalWrite pode ser utilizada para controlar uma variedade de dispositivos, incluindo servo-motores. Embora existam bibliotecas específicas para esse propósito, o digitalWrite pode ser uma solução mais fácil, especialmente para aqueles que desejam evitar a busca por bibliotecas adicionais.
 
-Para tirar o máximo proveito deste projeto, é aconselhável ter algum conhecimento prévio em IoT e eletrônica. Isso facilitará a configuração e personalização do projeto de acordo com suas necessidades específicas. Divirtam-se explorando e experimentando o código !
+Para tirar o máximo proveito deste projeto, é aconselhável ter algum conhecimento prévio em IoT e eletrônica. Isso facilitará a configuração e personalização do projeto de acordo com suas necessidades específicas.
 
 Não esqueça de instalar a placa ESP32 na IDE ( ESP32 by Espressif Systems ) e escolher a opção ESP32 Dev Module. Creio eu que o código esteja bem comentado e de fácil compreensão.
 
