@@ -15,16 +15,20 @@ Para tirar o máximo proveito deste projeto, é aconselhável ter algum conhecim
 Não esqueça de instalar a placa ESP32 na IDE ( ESP32 by Espressif Systems ) e escolher a opção ESP32 Dev Module. Creio eu que o código esteja bem comentado e de fácil compreensão.
 
 #  EXEMPLO DO SITE CONTROLADOR NO DESKTOP
-![Screenshot_3](https://github.com/gabrieltxra/IOT-PUPPET/assets/139972870/d9fca392-bea6-4a74-9db7-b494c951c9dc)
+![Screenshot_4](https://github.com/gabrieltxra/IOT-PUPPET/assets/139972870/cf6df9a5-6bf9-4262-9744-f217f63a3acd)
 
 #  EXEMPLO DO SITE CONTROLADOR MOBILE
-![Screenshot_4](https://github.com/gabrieltxra/IOT-PUPPET/assets/139972870/cf6df9a5-6bf9-4262-9744-f217f63a3acd)
+![Screenshot_3](https://github.com/gabrieltxra/IOT-PUPPET/assets/139972870/d9fca392-bea6-4a74-9db7-b494c951c9dc)
+
 
 # FUNCIONAMENTO DO PROJETO EM PRÁTICA 
 
-https://github.com/gabrieltxra/IOT-PUPPET/assets/139972870/9ad78243-1483-4e1d-acd7-c6b97d46f937
 
-# CÓDIGO DESENVOLVIDO POR GABRIEL TEIXEIRA
 
+https://github.com/gabrieltxra/IOT-PUPPET/assets/139972870/39682660-5e0d-4687-b0cf-8d7867853281
+
+
+
+# CÓDIGO DESENVOLVIDO POR GABRIEL TEIXEIRA 
 
 
