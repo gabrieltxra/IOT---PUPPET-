@@ -29,6 +29,6 @@ https://github.com/gabrieltxra/IOT-PUPPET/assets/139972870/39682660-5e0d-4687-b0
 
 
 
-# CÓDIGO DESENVOLVIDO POR GABRIEL TEIXEIRA 
+
 
 
